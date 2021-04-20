@@ -1,0 +1,2 @@
+# php_sql_injection_test
+SQLインジェクション脆弱性を試すPHPプログラム
