@@ -15,6 +15,24 @@
  * |3|出庫|move|0|
  * |4|管理|management|1|
  * 
+ * CREATE TABLE `login_user` (
+ *   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+ *   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+ *   `passwd` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+ *   `flg` int(11) DEFAULT NULL,
+ *   PRIMARY KEY (`id`)
+ * ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+ * INSERT INTO `login_user` VALUES (1,'Aさん','password1',1),(2,'Bさん','password2',0),(3,'Cさん','password3',0);
+ * 
+ * CREATE TABLE `menu` (
+ *   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+ *   `menu_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+ *   `page` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+ *   `flg` int(11) DEFAULT NULL,
+ *   PRIMARY KEY (`id`)
+ * ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+ * INSERT INTO `menu` VALUES (1,'ショップ','shop',0),(2,'入庫','stock',0),(3,'出庫','move',0),(4,'管理','management',1);
+ * 
  * ２．接続先データベースはlocalhostに作成されている事。
  * 
  * ３．$user，$password ，$database にデータベース接続情報
