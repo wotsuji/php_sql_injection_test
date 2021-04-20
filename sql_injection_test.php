@@ -3,12 +3,12 @@
  * 前提条件：
  * 
  * １．下記のテーブルとデータが準備されている事
- * table login_user
+ * login_user
  * |id|name|passwd|flg|
  * |1|Aさん|password1|1|
  * |2|Bさん|password2|0|
  * |3|Cさん|password3|0|
- * table menu
+ * menu
  * |id|menu_name|page|flg|
  * |1|ショップ|shop|0|
  * |2|入庫|stock|0|
